@@ -2,6 +2,26 @@
     width: 100%;
     height: 34px;
 }
+.espacio{
+    padding: 0 5%;
+    align-items: center
+}
+#barra-logo{
+    margin-top: 34px;
+    height: 150px !important;
+}
+.contenedor-flex{
+    display: flex;
+}
+.laterales{
+    justify-content: space-between
+}
+.logo-sena{
+    max-width: 115px;
+}
+.logo-gov{
+    max-height: 20px;
+}
 #barra-gris{
     background-color:#efefef;
     position: fixed;
@@ -14,3 +34,31 @@
 body{
     margin: 0;
 }
+
+.grid-min{
+    display: grid;
+    width: 100%;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: repeat(3,1fr);
+    gap: 15px;
+
+    grid-template-areas: "fecha inicio"
+                         "min min"
+                         "bus bus";
+
+}
+
+.item-fecha{
+    grid-area: fecha;
+}
+.item-inicio{
+    grid-area:inicio;
+}
+.item-buscar{
+    grid-area:bus;
+}
+.item-min{
+    grid-area:min;
+}
+
