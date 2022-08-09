@@ -38,6 +38,7 @@ body{
 .grid-min{
     display: grid;
     width: 100%;
+    max-width: 300px;
     margin: 0 auto;
     grid-template-columns: 1fr 1fr; 
     grid-template-rows: repeat(3,1fr);
