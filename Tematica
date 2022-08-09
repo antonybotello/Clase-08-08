@@ -1,0 +1,39 @@
+#   visual Code
+##  plugins
+###     Live Server
+###     HTML CSS Support
+###     Kite AutoComplete
+###     HTML Format
+###     IntelliSense for CSS class names in HTML
+###     HTML Boilerplate
+#   HTML
+##  Estructura 
+$###     Head
+$###     Body
+$###     Header
+###     nav
+###     Aside
+###     Main
+###     Footer
+##  Etiquetas principales
+###     H(1,2,3,4,5,6)
+$###     div,section
+###     listas
+###     tablas
+###     img
+###     frames
+
+#   CSS
+##  styles.css
+##  id
+##  class
+##  atributos basicos   
+###     color
+###     font-size
+###     margin
+###     padding
+###     width, height
+###     position
+###     display
+###     flexbox
+###     grid
