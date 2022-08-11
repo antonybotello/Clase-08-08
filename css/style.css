@@ -63,3 +63,21 @@ body{
     grid-area:min;
 }
 
+
+/* Estilos para el menu */
+nav ul li{
+    background-color: #fdfdfd;
+}
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul a{
+    display: block;
+    text-decoration: none;
+    color: #575756;
+    padding: 10px;
+    text-transform: capitalize;
+}
+nav ul
