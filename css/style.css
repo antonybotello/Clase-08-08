@@ -1,87 +1,163 @@
 @font-face {
     font-family: 'Dyna';
-    src: url('../fonts/DynaPuff.ttf') format('truetype');
+    src: url('webfonts/DynaPuff.ttf') format('truetype');
     font-style: normal;
     
 }
-
+body{
+    background-color: #ff6b00;
+}
 .ancho{
     width: 100%;
     height: 34px;
 }
-.espacio{
-    padding: 0 5%;
-    align-items: center
+.tw{
+    width: 30%;
+    max-height: 50%;
 }
 #barra-logo{
-    margin-top: 34px;
-    height: 150px !important;
+    height: 190px;
+    background-color: white;
+
+}
+.contenedor-general{
+    background-color: white;
+    border-radius: 15px;
+    margin-top:10px !important;
+}
+.ubicacion-flex{
+    justify-content: space-between;
 }
 .contenedor-flex{
     display: flex;
+    align-items: center;
+    height: 100%;
 }
-.laterales{
-    justify-content: space-between
+.columan-flex{
+    flex-direction: column;
 }
 .logo-sena{
     max-width: 115px;
+   
+}
+.box-logo{
+    vertical-align:middle;
 }
 .logo-gov{
     max-height: 20px;
 }
+.margin-externo{
+    margin:0 23%;
+    height: 100%;
+}
+.pading-externo{
+    padding:0 23%;
+    height: 100%;
+}
 #barra-gris{
     background-color:#efefef;
-    position: fixed;
+    position: sticky;
+    display:flex;
+    flex-direction: row-reverse;
+    color: #666;
+    font-size:1.3em;
+
+}
+#barra-gris a{
+ padding: 5px 10px;
 }
 #barra-azul{
     position: relative;
     background-color:#015dca;
-    top:34px;
+    
+    height: 40px;
+}
+.idioma{
+    border:1px solid;
+    border-radius: 5px ;
+    text-decoration: none;
+    color: white;
+    font-size: 0.5em;
+    padding: 3px
 }
 body{
     margin: 0;
 }
+.lupa{
+    color:white;
+    background-color:#808080;
+    padding: 5px;
+}
+.busqueda{
+    padding:2px;
+    border-radius: 0;
+    width: 88%;   
+    border: 1px solid;
+    
+}
+
 
 .grid-min{
     display: grid;
     width: 100%;
+    max-height: 190px;
     max-width: 300px;
-    margin: 0 auto;
     grid-template-columns: 1fr 1fr; 
     grid-template-rows: repeat(3,1fr);
     gap: 15px;
-
+    font-size:.6em;
     grid-template-areas: "fecha inicio"
                          "min min"
                          "bus bus";
-
+    align-items: center;
 }
 
 .item-fecha{
     grid-area: fecha;
+    font-size: 1em;
+}
+#fecha{
+    text-transform: uppercase;
 }
 .item-inicio{
     grid-area:inicio;
+    display: flex;
+    flex-direction: row-reverse;
 }
 .item-buscar{
     grid-area:bus;
+    display: flex;
+    flex-direction: row-reverse;
+
+}
+.item-buscar form{
+    width: 100%;
+    justify-content:flex-end;
 }
 .item-min{
     grid-area:min;
+    display: flex;
+    flex-direction: row-reverse;
+    
 }
 
 
 /* Estilos para el menu */
 nav{
-    height:35px;
+    height:34px;
     box-shadow: 0 5px 10px rgb(0 0 0 / 30%), 0 0 20px rgb(0 0 0 / 10%) inset;
     background-color: #fdfdfd;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 nav ul li{
     position: relative;
     float: left;
     margin: 0;
     padding: 0;
+    border-right: 1px solid #ff6b00;
 
 }
 nav ul{
@@ -93,11 +169,13 @@ nav ul a{
     display: block;
     text-decoration: none;
     color: #575756;
-    padding: 10px;
+    padding: 7px 6px;
     text-transform: capitalize;
-    font-family:"Dyna";
+    font-family:calibri, sans-serif;
+    
 
 }
+
 nav ul ul li a:hover{
     background-color:#575756;
     color:#e6e6e6
